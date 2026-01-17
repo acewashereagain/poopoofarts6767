@@ -44,11 +44,6 @@
         <li onclick="filterGames('shooter')" class="hover:text-indigo-400 cursor-pointer">Shooter</li>
         <li onclick="filterGames('sandbox')" class="hover:text-indigo-400 cursor-pointer">Sandbox</li>
         <li onclick="filterGames('puzzle')" class="hover:text-indigo-400 cursor-pointer">Puzzle</li>
-        <li class="hover:text-indigo-400 cursor-pointer">Action</li>
-        <li class="hover:text-indigo-400 cursor-pointer">Shooter</li>
-        <li class="hover:text-indigo-400 cursor-pointer">Puzzle</li>
-        <li class="hover:text-indigo-400 cursor-pointer">Sandbox</li>
-        <li class="hover:text-indigo-400 cursor-pointer">Experimental</li>
       </ul>
     </aside>
 
@@ -59,12 +54,14 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
 
         <!-- Game Card -->
-        <div data-category="shooter" class="bg-zinc-900 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
-          <div class="h-40 bg-gradient-to-br from-indigo-500 to-purple-600"></div>
+        <div data-category="shooter" class="game-card">
+          <a href="games/people-playground/index.html" class="block">
+            <div class="game-thumb" style="background-image: url('assets/thumbnails/fps-unity.jpg');"></div>
+          </a>
           <div class="p-4">
             <h3 class="font-semibold text-lg">FPS Prototype</h3>
             <p class="text-sm text-zinc-400">First-person shooter demo</p>
-            <button class="mt-3 w-full bg-indigo-500 hover:bg-indigo-600 py-2 rounded-lg">Play</button>
+            <a href="games/fps-unity/index.html" class="play-btn block text-center">Play</a>
           </div>
         </div>
 
